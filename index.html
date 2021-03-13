@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="media/piIcons/ms-icon-144x144.png"/>
+<link rel="stylesheet" href="style.css">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href='media/piIcons/apple-icon-57x57.png'/>
+    <link rel="apple-touch-icon" sizes="60x60" href="media/piIcons/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="media/piIcons/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="media/piIcons/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="media/piIcons/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="media/piIcons/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="media/piIcons/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="media/piIcons/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="media/piIcons/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192"  href="media/piIcons/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="media/piIcons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="media/piIcons/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="media/piIcons/favicon-16x16.png"/>
+    <link rel="manifest" href="media/piIcons/manifest.json"/>
+<body>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+    <!-- Collapse button -->
+
+
+  <a class="navbar-brand" href="/index.html">
+      <img src="media/piicons.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      PLANiN.XYZ
+    </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about_timeline.html">About</a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link" href="#">PI Search<span class="sr-only">(current)</span></a>
+        </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/contact_form.html">Contact</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="/jobs_openings.html">Career</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/our_team.html">Team</a>
+        </li> -->
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Our Journey
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/innovation_outreach.html">Innovation Outreach</a>
+            <a class="dropdown-item" href="/our_innovations_v2.html">Innovation Timeline</a>
+            <a class="dropdown-item" href="/news.html">News</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/blognew.html">Blog</a>
+        </li> -->
+    </ul>
+    <!-- <span class="navbar-text">
+      <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/planin.xyz/">
+        <i class="fab fa-linkedin-in" style="color:#0e76a8"></i>
+      </a>
+  </span>
+    <span class="navbar-text">
+      <a class="nav-link" target="_blank" href="https://www.facebook.com/planin.xyz">
+        <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+      </a>
+  </span> -->
+  <!-- <span class="navbar-text">
+    <a class="nav-link" href="#">
+      <i class="fab fa-instagram" style="color: #DD2A7B"></i>
+    </a>
+</span>
+<span class="navbar-text">
+    <a class="nav-link" href="#">
+      <i class="fab fa-twitter" style="color:#00ACEE"></i>
+    </a>
+</span>
+<span class="navbar-text">
+  <a class="nav-link" href="#">
+    <i class="fab fa-quora" style="color:#A82400"></i>
+  </a>
+</span> -->
+  </div>
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+      class="fas fa-bars fa-1x"></i></span></button>
+</nav>
+  <!-- <h1>Overlay text on canvas image and save as base64</h1> -->
+  <div class="page-wrap">
+    <div class="controls">
+      <input class="controls__input" type="file" id="imageLoader" name="imageLoader"/>
+      <!-- <label class="controls__label" for="name">First, choose an image.</label> -->
+      
+      <input class="controls__input" id="name" type="text" value=""/>
+      <!-- <label class="controls__label" for="name">Overlay Text</label> -->
+    </div>
+    <div id="canvas-wrap">
+       <canvas style="display:inline-block" id="imageCanvas" width=400px height=600px>
+          <canvas id="canvasID" width=400px height=600px></canvas>
+      </canvas> 
+    </div>
+    
+  </div>
+  <button id="download">download</button>
+
+
+  <footer class="footer-section text-center">
+    <div class="container">
+    <!-- <h2 class="section-title mb-5">Nothing but Extraordinary <span><h4 style="color:#00ACEE"> नकिञ्चिद् तु नितान्त </h4></span></h2> -->
+    <!-- <div class="social-links">
+    <a href="https://www.linkedin.com/company/planin.xyz/"><span class="fab fa-linkedin-in" style="color:#0e76a8"></span></a>
+    <a href="https://www.facebook.com/planin.xyz"><span class="fab fa-facebook-f" style="color: #3b5998;"></span></a>
+    <a href="https://www.instagram.com/"><span class="fab fa-instagram" style="color: #DD2A7B"></span></a>
+    <a href="https://www.twitter.com/"><span class="fab fa-twitter" style="color:#00ACEE"></span></a>
+    <a href="https://www.quora.com/"><span class="fab fa-quora" style="color:#A82400"></span></a>
+    </div> -->
+    <div class="copyright">
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fas fa-heart"  style="color:#A82400" aria-hidden="true"></i> by <a href="http://www.planin.xyz/" target="_blank">PLANiN.XYZ</a>
+    
+    </div>
+    </div>
+    </footer>
+    </div>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
+
