@@ -8,8 +8,8 @@ img.crossOrigin="anonymous";
 
 var text="-Abhishek Shil"
 
-// window.addEventListener('load', DrawPlaceholder)
-window.addEventListener('load', NonDynamicText)
+window.addEventListener('load', DrawPlaceholder)
+// window.addEventListener('load', NonDynamicText)
 
 function NonDynamicText(img){
     document.getElementById('name').addEventListener('keyup', function() {
